@@ -1,0 +1,32 @@
+{
+  "name": "dir-manager",
+  "version": "1.0.0",
+  "description": "dir-manager",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec ts-node src/index.ts",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafaelsouzagomes/dir-manager.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafaelsouzagomes/dir-manager/issues"
+  },
+  "homepage": "https://github.com/rafaelsouzagomes/dir-manager#readme",
+  "dependencies": {
+    "fs-extra": "^11.1.1",
+    "nodemon": "^3.0.1",
+    "readline": "^1.3.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.1"
+  }
+}
