@@ -1,8 +1,8 @@
 import * as fs from 'fs';
 import * as path from 'path';
 
-import { ItemsGroupByKey } from "./models/ItemsGroupByDate";
 import { isObjectEmpty } from './utils/object-utils';
+import { ItemsGroupByKey } from './models/Items-group-by-key';
 
 export class MoveFiles {
 
@@ -29,7 +29,7 @@ export class MoveFiles {
     return newFolders;
   }
 
-  createFolder(folder:string, key: string): string | undefined {
+  private createFolder(folder:string, key: string): string | undefined {
     const nameFolder = folder + `${key}`;
     if (fs.existsSync(nameFolder)) {
         return nameFolder;
